@@ -32,11 +32,12 @@ public class Resource {
     private String ResourceImage;
     
     @Enumerated
-    private AvailabilityStatusEnum availabilityStatusEnum;
+    private AvailabilityStatusEnum availabilityStatus;
     
     @Enumerated
     @Column(name = "resource_condition")
-    private ResourceConditionEnum ResourceConditionEnum;
+    private ResourceConditionEnum ResourceCondition;
+   
     private String SecurityDeposit;
 
 

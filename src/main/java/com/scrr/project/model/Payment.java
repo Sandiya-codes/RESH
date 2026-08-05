@@ -9,6 +9,7 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
 
@@ -21,14 +22,16 @@ public class Payment {
 	private Long paymentID;
 
 	@ManyToOne
-	private Booking booking;
+	@JoinColumn(name = "booking_id")
+    
+	private Booking bookingId;
 	
 	private String PaymentAmount;
 	
-	@Enumerated(EnumType.STRING)
+	@Enumerated
 	private PaymentMethodEnum paymentMethod;
 
-	@Enumerated(EnumType.STRING)
+	@Enumerated
 	private PaymentStatusEnum paymentStatus;
 
 	private DateTimeAtCreation PaymentDate;

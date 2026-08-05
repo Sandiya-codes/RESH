@@ -35,7 +35,7 @@ public class Complaint {
 	private String description;
 	
     @Enumerated
-	private ComplaintStatusEnum complaintStatus;
+    private ComplaintStatusEnum complaintStatus;
 
 	private DateTimeAtCreation createdDate;
 

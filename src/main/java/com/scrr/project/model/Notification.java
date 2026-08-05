@@ -1,4 +1,6 @@
 package com.scrr.project.model;
+import javax.print.attribute.standard.DateTimeAtCreation;
+
 import com.scrr.project.enumration.ReadStatusEnum;
 import com.scrr.project.enumration.ReadStatusEnum;
 
@@ -25,9 +27,9 @@ private User UserID;
 
 private String NotificationTitle;
 
-private String Message;
 
-private String NotificationDate;
+private DateTimeAtCreation NotificationDate;
+
 @Enumerated
 private ReadStatusEnum ReadStatus;
 

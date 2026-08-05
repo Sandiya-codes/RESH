@@ -2,6 +2,8 @@ package com.scrr.project.model;
 
 import java.time.LocalDateTime;
 
+import javax.print.attribute.standard.DateTimeAtCreation;
+
 import com.scrr.project.enumration.BookingStatusEnum;
 
 import jakarta.persistence.Entity;
@@ -23,20 +25,20 @@ private Long bookingID;
 
 @ManyToOne
 @JoinColumn(name = "user_id")
-private User user;
+private User userId;
 
 @ManyToOne
 @JoinColumn(name = "resource_id")
-private Resource resource;
+private Resource resourceId;
 
-private LocalDateTime bookingDate;
+private DateTimeAtCreation bookingDate;
 
-private LocalDateTime startDate;
+private DateTimeAtCreation startDate;
 
-private LocalDateTime endDate;
+private DateTimeAtCreation endDate;
 
 @Enumerated
-private BookingStatusEnum bookingStatusEnum;
+private BookingStatusEnum bookingStatus;
 
 private String totalAmount;
 

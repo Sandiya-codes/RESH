@@ -26,9 +26,11 @@ public class ReturnRequest {
 
 	private DateTimeAtCreation ReturnDate;
 
-	private String ResourceCondition;
+	@Enumerated
+	private ResourceConditionEnum ResourceCondition;
 
 	private String LateFine;
-    @Enumerated
+    
+	@Enumerated
 	private ReturnStatusEnum ReturnStatus;
 }
