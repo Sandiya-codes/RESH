@@ -1,6 +1,6 @@
 package com.scrr.project.enumration;
 
-public enum BookingStatus {
+public enum BookingStatusEnum {
 	PENDING,
     CONFIRMED,
     CANCELLED,

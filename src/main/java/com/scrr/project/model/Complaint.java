@@ -2,7 +2,8 @@ package com.scrr.project.model;
 
 import javax.print.attribute.standard.DateTimeAtCreation;
 
-import com.scrr.project.enumration.ComplaintStatus;
+
+import com.scrr.project.enumration.ComplaintStatusEnum;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Enumerated;
@@ -34,7 +35,7 @@ public class Complaint {
 	private String description;
 	
     @Enumerated
-	private ComplaintStatus complaintStatus;
+	private ComplaintStatusEnum complaintStatus;
 
 	private DateTimeAtCreation createdDate;
 

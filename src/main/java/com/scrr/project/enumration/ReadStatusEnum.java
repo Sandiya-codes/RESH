@@ -1,6 +1,7 @@
 package com.scrr.project.enumration;
 
-public enum ReadStatus {
+public enum ReadStatusEnum {
 	 READ,
+	 ON_PROGESS,
 	 UNREAD
 }

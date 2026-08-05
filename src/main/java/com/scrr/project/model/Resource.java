@@ -1,6 +1,7 @@
 package com.scrr.project.model;
 import com.scrr.project.enumration.*;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
@@ -23,15 +24,19 @@ public class Resource {
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category categoryID;
+    
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User userId;
    
-    private Long OwnerID;
     private String ResourceImage;
     
     @Enumerated
-    private AvailabilityStatus AvailabilityStatus;
+    private AvailabilityStatusEnum availabilityStatusEnum;
     
     @Enumerated
-    private  ResourceCondition Condition ;
+    @Column(name = "resource_condition")
+    private ResourceConditionEnum ResourceConditionEnum;
     private String SecurityDeposit;
 
 

@@ -30,5 +30,5 @@ public class ReturnRequest {
 
 	private String LateFine;
     @Enumerated
-	private ReturnStatus ReturnStatus;
+	private ReturnStatusEnum ReturnStatus;
 }

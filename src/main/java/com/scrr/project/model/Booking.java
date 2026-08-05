@@ -2,10 +2,9 @@ package com.scrr.project.model;
 
 import java.time.LocalDateTime;
 
-import com.scrr.project.enumration.BookingStatus;
+import com.scrr.project.enumration.BookingStatusEnum;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -36,8 +35,8 @@ private LocalDateTime startDate;
 
 private LocalDateTime endDate;
 
-@Enumerated(EnumType.STRING)
-private BookingStatus bookingStatus;
+@Enumerated
+private BookingStatusEnum bookingStatusEnum;
 
 private String totalAmount;
 

@@ -1,6 +1,6 @@
 package com.scrr.project.enumration;
 
-public enum ReturnStatus {
+public enum ReturnStatusEnum {
 	REQUESTED,
     APPROVED,
     REJECTED,

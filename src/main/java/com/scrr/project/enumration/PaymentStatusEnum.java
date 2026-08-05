@@ -1,6 +1,6 @@
 package com.scrr.project.enumration;
 
-public enum PaymentStatus {
+public enum PaymentStatusEnum {
 	 PENDING,
 	 SUCCESS,
 	 FAILED,

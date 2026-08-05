@@ -1,5 +1,6 @@
 package com.scrr.project.model;
-import com.scrr.project.enumration.ReadStatus;
+import com.scrr.project.enumration.ReadStatusEnum;
+import com.scrr.project.enumration.ReadStatusEnum;
 
 import jakarta.persistence.Entity;
 
@@ -28,6 +29,6 @@ private String Message;
 
 private String NotificationDate;
 @Enumerated
-private ReadStatus ReadStatus;
+private ReadStatusEnum ReadStatus;
 
 }

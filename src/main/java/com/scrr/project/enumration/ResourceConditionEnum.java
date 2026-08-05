@@ -1,6 +1,6 @@
 package com.scrr.project.enumration;
 
-public enum ResourceCondition {
+public enum ResourceConditionEnum {
 	NEW,
     GOOD,
     FAIR

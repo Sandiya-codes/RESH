@@ -1,6 +1,6 @@
 package com.scrr.project.enumration;
 
-public enum AvailabilityStatus {
+public enum AvailabilityStatusEnum {
 	AVAILABLE,
     RENTED,
     UNAVAILABLE

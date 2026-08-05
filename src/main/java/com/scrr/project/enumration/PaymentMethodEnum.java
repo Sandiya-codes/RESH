@@ -1,6 +1,7 @@
+
 package com.scrr.project.enumration;
 
-public enum PaymentMethod {
+public enum PaymentMethodEnum {
 	UPI,
     CREDIT_CARD,
     DEBIT_CARD,

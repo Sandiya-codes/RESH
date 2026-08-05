@@ -26,10 +26,10 @@ public class Payment {
 	private String PaymentAmount;
 	
 	@Enumerated(EnumType.STRING)
-	private PaymentMethod paymentMethod;
+	private PaymentMethodEnum paymentMethod;
 
 	@Enumerated(EnumType.STRING)
-	private PaymentStatus paymentStatus;
+	private PaymentStatusEnum paymentStatus;
 
 	private DateTimeAtCreation PaymentDate;
 

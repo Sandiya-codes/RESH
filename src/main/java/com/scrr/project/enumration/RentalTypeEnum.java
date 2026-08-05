@@ -1,8 +1,9 @@
 package com.scrr.project.enumration;
 
-public enum RentalType {
+public enum RentalTypeEnum {
 	HOURLY,
     DAILY,
-    WEEKLY
+    WEEKLY,
+    MONTHLY
 
 }

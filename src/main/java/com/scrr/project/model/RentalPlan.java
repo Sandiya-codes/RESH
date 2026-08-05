@@ -22,7 +22,7 @@ public class RentalPlan {
     private Resource resourceID;
     
     @Enumerated
-    private RentalType  RentalType;
+    private RentalTypeEnum  RentalType;
     
     private String  RentalPrice;
     private String LateFee;
